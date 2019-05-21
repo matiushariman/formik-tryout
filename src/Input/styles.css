@@ -1,0 +1,11 @@
+.Input--Label {
+  display: block;
+  font-size: 12px;
+  text-align: left;
+  margin-bottom: 5px;
+}
+
+.Input--Field {
+  font-size: 16px;
+  padding: 5px;
+}

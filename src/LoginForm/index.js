@@ -5,6 +5,7 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import './styles.css';
+import Input from '../Input';
 
 function LoginForm() {
   return (
@@ -13,11 +14,21 @@ function LoginForm() {
         <Form>
           <div className="LoginForm--Container">
             <div>
-              <div>
-                <Field name="email" type="email" />
+              <div className="LoginForm--Field">
+                <Field
+                  name="email"
+                  type="email"
+                  component={Input}
+                  label="Email Address"
+                />
               </div>
-              <div>
-                <Field name="password" type="password" />
+              <div className="LoginForm--Field">
+                <Field
+                  name="password"
+                  type="password"
+                  component={Input}
+                  label="Password"
+                />
               </div>
             </div>
             <div>

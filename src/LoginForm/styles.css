@@ -7,3 +7,8 @@
   width: 960px;
   justify-content: space-around;
 }
+
+.LoginForm--Field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
