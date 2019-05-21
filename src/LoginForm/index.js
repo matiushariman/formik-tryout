@@ -3,15 +3,19 @@
  */
 
 import React from 'react';
-import { Formik, Form, Field } from 'formik';
+import { Formik, Form, Field, ErrorMessage } from 'formik';
 import './styles.css';
+import ValidationSchema from './ValidationSchema';
 import Input from '../Input';
 
 function LoginForm() {
   return (
-    <Formik initialValues={{ email: '', password: '' }}>
+    <Formik
+      initialValues={{ email: '', password: '' }}
+      validationSchema={ValidationSchema}
+    >
       {props => (
-        <Form>
+        <Form autoCapitalize="off" autoComplete="off">
           <div className="LoginForm--Container">
             <div>
               <div className="LoginForm--Field">
@@ -30,6 +34,14 @@ function LoginForm() {
                   label="Password"
                 />
               </div>
+              <ErrorMessage
+                name="email"
+                render={msg => <div className="LoginForm--Error">{msg}</div>}
+              />
+              <ErrorMessage
+                name="password"
+                render={msg => <div className="LoginForm--Error">{msg}</div>}
+              />
             </div>
             <div>
               <pre>

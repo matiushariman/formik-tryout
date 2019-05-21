@@ -12,3 +12,8 @@
   padding-top: 10px;
   padding-bottom: 10px;
 }
+
+.LoginForm--Error {
+  color: #d75a4a;
+  font-size: 14px;
+}
