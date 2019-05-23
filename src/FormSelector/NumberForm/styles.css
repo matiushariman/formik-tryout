@@ -1,0 +1,19 @@
+/**
+* NumberForm styles
+*/
+.NumberForm--Container {
+  display: flex;
+  flex-direction: row;
+  width: 960px;
+  justify-content: space-around;
+}
+
+.NumberForm--Field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.NumberForm--Error {
+  color: #d75a4a;
+  font-size: 14px;
+}

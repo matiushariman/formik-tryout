@@ -1,7 +1,7 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import LoginForm from './LoginForm';
+import FormSelector from './FormSelector';
 
 function App() {
   return (
@@ -14,7 +14,7 @@ function App() {
           width="200"
           height="200"
         />
-        <LoginForm />
+        <FormSelector />
       </header>
     </div>
   );
