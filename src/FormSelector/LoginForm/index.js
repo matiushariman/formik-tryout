@@ -4,8 +4,8 @@
 
 import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
-import './styles.css';
 import ValidationSchema from './ValidationSchema';
+import '../styles.css';
 import DisplayFormikProps from '../../common/DisplayFormikProps';
 import Input from '../../common/Input';
 
@@ -17,9 +17,9 @@ function LoginForm() {
     >
       {props => (
         <Form autoCapitalize="off" autoComplete="off">
-          <div className="LoginForm--Container">
+          <div className="Form--Container">
             <div>
-              <div className="LoginForm--Field">
+              <div className="Form--Field">
                 <Field
                   name="email"
                   type="email"
@@ -27,7 +27,7 @@ function LoginForm() {
                   label="Email Address"
                 />
               </div>
-              <div className="LoginForm--Field">
+              <div className="Form--Field">
                 <Field
                   name="password"
                   type="password"
@@ -37,11 +37,11 @@ function LoginForm() {
               </div>
               <ErrorMessage
                 name="email"
-                render={msg => <div className="LoginForm--Error">{msg}</div>}
+                render={msg => <div className="Form--Error">{msg}</div>}
               />
               <ErrorMessage
                 name="password"
-                render={msg => <div className="LoginForm--Error">{msg}</div>}
+                render={msg => <div className="Form--Error">{msg}</div>}
               />
             </div>
             <div>
