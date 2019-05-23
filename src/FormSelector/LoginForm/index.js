@@ -6,7 +6,8 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import './styles.css';
 import ValidationSchema from './ValidationSchema';
-import Input from '../Input';
+import DisplayFormikProps from '../DisplayFormikProps';
+import Input from '../../Input';
 
 function LoginForm() {
   return (
@@ -44,9 +45,7 @@ function LoginForm() {
               />
             </div>
             <div>
-              <pre>
-                <strong>props</strong> = {JSON.stringify(props, null, 2)}
-              </pre>
+              <DisplayFormikProps {...props} />
             </div>
           </div>
         </Form>
