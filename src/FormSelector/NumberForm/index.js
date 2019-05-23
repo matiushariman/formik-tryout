@@ -6,8 +6,8 @@ import React from 'react';
 import { Formik, Form } from 'formik';
 import './styles.css';
 import ValidationSchema from './ValidationSchema';
-import DisplayFormikProps from '../DisplayFormikProps';
-import NumberField from '../../NumberField';
+import DisplayFormikProps from '../../common/DisplayFormikProps';
+import NumberField from '../../common/NumberField';
 
 function NumberForm() {
   return (
