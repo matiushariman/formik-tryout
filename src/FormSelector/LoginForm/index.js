@@ -6,8 +6,8 @@ import React from 'react';
 import { Formik, Form, Field, ErrorMessage } from 'formik';
 import './styles.css';
 import ValidationSchema from './ValidationSchema';
-import DisplayFormikProps from '../DisplayFormikProps';
-import Input from '../../Input';
+import DisplayFormikProps from '../../common/DisplayFormikProps';
+import Input from '../../common/Input';
 
 function LoginForm() {
   return (
