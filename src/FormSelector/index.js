@@ -1,5 +1,6 @@
 import React from 'react';
 import LoginForm from './LoginForm';
+import NumberForm from './NumberForm';
 
 export class FormSelector extends React.PureComponent {
   state = {
@@ -18,7 +19,7 @@ export class FormSelector extends React.PureComponent {
         <div>
           <button onClick={this.handleSwitchForm}>Switch Form</button>
         </div>
-        <div>{this.state.isLoginForm ? <LoginForm /> : null}</div>
+        <div>{this.state.isLoginForm ? <LoginForm /> : <NumberForm />}</div>
       </React.Fragment>
     );
   }

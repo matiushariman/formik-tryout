@@ -10,7 +10,7 @@ export function Input({
   return (
     <React.Fragment>
       {label && (
-        <label className="Input--Label" for={field.name}>
+        <label className="Input--Label" htmlFor={field.name}>
           {label}
         </label>
       )}
