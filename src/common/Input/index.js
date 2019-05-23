@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './styles.css';
 
 export function Input({
@@ -18,5 +19,11 @@ export function Input({
     </React.Fragment>
   );
 }
+
+Input.propTypes = {
+  field: PropTypes.object,
+  form: PropTypes.object,
+  label: PropTypes.string,
+};
 
 export default Input;

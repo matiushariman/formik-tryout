@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import NumberFormat from 'react-number-format';
 
 export function NumberField(props) {
@@ -15,5 +16,10 @@ export function NumberField(props) {
     />
   );
 }
+
+NumberField.propTypes = {
+  value: PropTypes.number.isRequired,
+  onValueChange: PropTypes.func.isRequired,
+};
 
 export default NumberField;
