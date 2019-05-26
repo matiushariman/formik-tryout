@@ -19,7 +19,7 @@ function NumberForm() {
               <div className="Form--Field">
                 <NumberField
                   placeholder="$50"
-                  value={props.values.numbers}
+                  value={props.values.amount}
                   name="amount"
                   decimalScale={2}
                   onValueChange={val =>
